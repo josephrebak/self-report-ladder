@@ -1,0 +1,6 @@
+data/
+results_smoke/
+results/*.zip
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store

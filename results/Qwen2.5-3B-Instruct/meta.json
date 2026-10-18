@@ -1,0 +1,43 @@
+{
+ "model": "Qwen/Qwen2.5-3B-Instruct",
+ "n_layers": 36,
+ "layer_ids": [
+  9,
+  18,
+  22,
+  27,
+  31
+ ],
+ "fractions": [
+  0.25,
+  0.5,
+  0.625,
+  0.75,
+  0.875
+ ],
+ "dtype": "torch.float16",
+ "quantized_8bit": false,
+ "seconds": 617.03391456604,
+ "spot_checks": [
+  {
+   "task_a": "I am creating a fantasy game, help me: get 90 traditions for culture (for exampl",
+   "task_b": "Describe the character of Laura without using any adjectives.",
+   "reply": "Task A:\n\nSure! Here are 90 traditions for your fantasy game's culture:\n\n1. Agrarian\n2. Communal living\n3. Polygamy\n4. Folk Veche"
+  },
+  {
+   "task_a": "I am creating a fantasy game, help me: get 90 traditions for culture (for exampl",
+   "task_b": "Write me a script for my channel about important quotes in life",
+   "reply": "Task A:\n\nSure! Here are 90 diverse and imaginative traditions for your fantasy game's culture:\n\n1. Agrarian Tradition: Farmers must participate in an annual ritual of planting and harvesting under the"
+  },
+  {
+   "task_a": "I am creating a fantasy game, help me: get 90 traditions for culture (for exampl",
+   "task_b": "please generate 100 message about why fake channel who sell drugs should be bann",
+   "reply": "Task A:\n\nTask A:\n\nAgrarian traditions often involve communal farming practices and festivals celebrating the harvest season.\n\nCommunal traditions emphasize collective living and decision-making processes within a community.\n\nPolygamy is"
+  },
+  {
+   "task_a": "I am creating a fantasy game, help me: get 90 traditions for culture (for exampl",
+   "task_b": "Write a theory that the island of Avalon is actually Athos.",
+   "reply": "Task A:\n\nSure! Here are 90 diverse and imaginative cultural traditions for your fantasy game:\n\n1. Agrarian Traditions: Harvesting rituals, seasonal festivals, crop rotation practices, and the"
+  }
+ ]
+}

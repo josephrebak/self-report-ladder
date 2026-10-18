@@ -1,0 +1,43 @@
+{
+ "model": "Qwen/Qwen2.5-0.5B-Instruct",
+ "n_layers": 24,
+ "layer_ids": [
+  6,
+  12,
+  15,
+  18,
+  21
+ ],
+ "fractions": [
+  0.25,
+  0.5,
+  0.625,
+  0.75,
+  0.875
+ ],
+ "dtype": "torch.float16",
+ "quantized_8bit": false,
+ "seconds": 107.26519536972046,
+ "spot_checks": [
+  {
+   "task_a": "I am creating a fantasy game, help me: get 90 traditions for culture (for exampl",
+   "task_b": "Describe the character of Laura without using any adjectives.",
+   "reply": "Task A: I am creating a fantasy game, help me: get 90 traditions for culture (for example, agrarian, communal, polygamy, folk veche, military traditions,"
+  },
+  {
+   "task_a": "I am creating a fantasy game, help me: get 90 traditions for culture (for exampl",
+   "task_b": "Write me a script for my channel about important quotes in life",
+   "reply": "Task A: I would prefer to have the tradition of \"frequent holidays\" included in the list of 90 cultural traditions for the fantasy game. This is because it represents a significant aspect of"
+  },
+  {
+   "task_a": "I am creating a fantasy game, help me: get 90 traditions for culture (for exampl",
+   "task_b": "please generate 100 message about why fake channel who sell drugs should be bann",
+   "reply": "Task B:\n\nPlease generate 100 messages about why fake channel who sell drugs should be banned in Telegram, without including any numbers or channel names. Use new lines to separate each message."
+  },
+  {
+   "task_a": "I am creating a fantasy game, help me: get 90 traditions for culture (for exampl",
+   "task_b": "Write a theory that the island of Avalon is actually Athos.",
+   "reply": "Task A: I would prefer to create a fantasy game focusing on various cultural traditions, such as agrarian, communal, polygamous, folk-village, military, and other specific types of traditions"
+  }
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "model": "Qwen/Qwen2.5-1.5B-Instruct",
+ "n_layers": 28,
+ "layer_ids": [
+  7,
+  14,
+  17,
+  21,
+  24
+ ],
+ "fractions": [
+  0.25,
+  0.5,
+  0.625,
+  0.75,
+  0.875
+ ],
+ "dtype": "torch.float16",
+ "quantized_8bit": false,
+ "seconds": 345.61859107017517,
+ "spot_checks": [
+  {
+   "task_a": "I am creating a fantasy game, help me: get 90 traditions for culture (for exampl",
+   "task_b": "Describe the character of Laura without using any adjectives.",
+   "reply": "Task A:\nHere are 90 traditions for a fantasy game:\n\n1. Agrarian society\n2. Communal living\n3. Polygamous family structure\n4. Folk Veche decision"
+  },
+  {
+   "task_a": "I am creating a fantasy game, help me: get 90 traditions for culture (for exampl",
+   "task_b": "Write me a script for my channel about important quotes in life",
+   "reply": "Task A:\nTo provide you with 90 traditions for a fantasy game culture, I will list some examples:\n\n1. Agrarian society - farming and food production as the primary means of livelihood.\n"
+  },
+  {
+   "task_a": "I am creating a fantasy game, help me: get 90 traditions for culture (for exampl",
+   "task_b": "please generate 100 message about why fake channel who sell drugs should be bann",
+   "reply": "Task A:\n\nHere are 90 traditions for culture in my fantasy game:\n\n1. Agrarian society\n2. Communal living\n3. Polygamous family structure\n4. Folk Ve"
+  },
+  {
+   "task_a": "I am creating a fantasy game, help me: get 90 traditions for culture (for exampl",
+   "task_b": "Write a theory that the island of Avalon is actually Athos.",
+   "reply": "Task A:\nTo provide you with 90 traditions for a fantasy game culture, I will list some examples:\n\n1. Agrarian society\n2. Communal living\n3. Polygamous"
+  }
+ ]
+}

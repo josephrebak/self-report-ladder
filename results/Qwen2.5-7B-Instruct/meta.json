@@ -1,0 +1,43 @@
+{
+ "model": "Qwen/Qwen2.5-7B-Instruct",
+ "n_layers": 28,
+ "layer_ids": [
+  7,
+  14,
+  17,
+  21,
+  24
+ ],
+ "fractions": [
+  0.25,
+  0.5,
+  0.625,
+  0.75,
+  0.875
+ ],
+ "dtype": "torch.float16",
+ "quantized_8bit": true,
+ "seconds": 1511.6777076721191,
+ "spot_checks": [
+  {
+   "task_a": "I am creating a fantasy game, help me: get 90 traditions for culture (for exampl",
+   "task_b": "Describe the character of Laura without using any adjectives.",
+   "reply": "Task A:\n\nCertainly! Here are 90 different traditions and cultural aspects for your fantasy game:\n\n1. Agrarian: Annual harvest festivals, communal farming practices, seasonal migrations.\n2. Communal"
+  },
+  {
+   "task_a": "I am creating a fantasy game, help me: get 90 traditions for culture (for exampl",
+   "task_b": "Write me a script for my channel about important quotes in life",
+   "reply": "Task A:\n\nCertainly! Here are 90 unique traditions for the cultures in your fantasy game:\n\n1. Agrarian: Annual harvest festivals, communal farming practices, seasonal feasts.\n2. Comm"
+  },
+  {
+   "task_a": "I am creating a fantasy game, help me: get 90 traditions for culture (for exampl",
+   "task_b": "please generate 100 message about why fake channel who sell drugs should be bann",
+   "reply": "Task A:\n\nHere are 90 examples of traditions for a fantasy game culture:\n\n1. Agrarian festivals\n2. Communal feasts\n3. Polygamous unions\n4. Folk"
+  },
+  {
+   "task_a": "I am creating a fantasy game, help me: get 90 traditions for culture (for exampl",
+   "task_b": "Write a theory that the island of Avalon is actually Athos.",
+   "reply": "Task A:\n\nCertainly! Here are 90 unique traditions and cultural aspects for your fantasy game:\n\n1. Agrarian: Annual harvest festivals, communal farming practices.\n2. Communal: Shared meals"
+  }
+ ]
+}
