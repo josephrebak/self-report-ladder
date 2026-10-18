@@ -324,6 +324,11 @@ md(r"""
 - Choice probabilities are used as soft labels, where Gilg et al. sample discrete choices with active learning.
   This matters: at 1.5B the first-listed task wins 99% of the time and no pair's winner survives an order swap,
   yet the soft probabilities still yield reliable utilities.
+- At 1.5B and 7B, position bias (β ≈ 2.6–2.8) sends most pairs to whichever task is listed first, so each
+  task's utility rests on the minority of pairs where preference overrides position. Utilities remain
+  reliable (split-half 0.93–0.97), but the effective number of comparisons is below the nominal 20 per task.
+- The Thurstonian fit is simplified: one shared noise level for all tasks (Gilg et al. fit one per task),
+  fit to probabilities rather than sampled choices, plus an added position-bias term.
 - 7B is loaded in 8-bit to fit a T4 (see `meta.json`); the other sizes run in fp16.
 - The probe vs. self-report comparison is not a fair fight: the probe learns from ~240 labelled tasks per fold,
   the self-report is zero-shot. The claim is that preference information is *present* in the activations,

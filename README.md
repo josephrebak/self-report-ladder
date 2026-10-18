@@ -2,12 +2,14 @@
 
 Do language models' self-reports track what they actually choose, and does that change with scale?
 
+*Joseph Rebak, October 2026*
+
 ![Headline result](figures/headline.png)
 
 Across Qwen2.5-Instruct 0.5B → 7B, on 300 real tasks:
 
 - **Self-reports catch up with revealed preferences only at scale.** Agreement rises from none at 0.5B to
-  r ≈ 0.78 at 7B, but much of that comes from models disfavouring harmful requests. On benign tasks alone,
+  r ≈ 0.77 at 7B, but much of that comes from models disfavouring harmful requests. On benign tasks alone,
   self-reports carry no signal through 1.5B.
 - **A linear probe on activations reads the same preferences at every size.** It reaches r ≈ 0.6–0.7 on benign
   tasks and beats a content-only baseline throughout. The information is present internally well before the
@@ -63,3 +65,7 @@ pip install -r requirements.txt
 
 On an Intel Mac, PyTorch stops at 2.2.2, which requires `numpy<2` and `transformers<5`. Colab's preinstalled
 versions work as they are.
+
+## License
+
+MIT. The task data comes from [`oscar-gilg/probing-persona-preferences`](https://github.com/oscar-gilg/probing-persona-preferences), also MIT.

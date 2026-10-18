@@ -1,6 +1,6 @@
 # Self-reports lag behind internal representations of preference
 
-**Qwen2.5-Instruct, 0.5B → 7B · 300 tasks · code and data in this repo.**
+**Joseph Rebak · Qwen2.5-Instruct, 0.5B → 7B · 300 tasks · code and data in this repo.**
 
 ## Question
 
@@ -65,6 +65,13 @@ Correlation with revealed utilities, with 95% bootstrap CIs over tasks:
   per fold, while the self-report is zero-shot. The claim is that preference information is *present*
   internally, not that the model *cannot* report it. Better elicitation, or training for accurate self-report
   (Plunkett et al., 2025), might close the gap.
+- **At 1.5B and 7B, most comparisons carry little information.** Position bias is strong enough (β ≈ 2.6–2.8)
+  that most pairs go to whichever task is listed first, so each task's utility rests on the minority of pairs
+  where preference overrides position, plus choice probabilities that dip below 1. Utilities are still stable
+  (split-half reliability 0.93–0.97), but the effective number of comparisons per task is below the nominal 20.
+- **The utility model is a simplified Thurstonian fit.** All tasks share one noise level (Gilg et al. fit one
+  per task); it is fit to choice probabilities rather than sampled choices; and the position-bias term is an
+  addition of mine.
 - Choices are read from logits after the model names a task, not parsed from full completions. Spot checks at
   every size confirm that the model performs the task it names.
 - 7B ran in 8-bit to fit a T4; the other sizes ran in fp16.
